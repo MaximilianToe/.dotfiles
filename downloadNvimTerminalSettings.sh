@@ -8,4 +8,4 @@ mkdir -p ~/.config/alacritty
 cp -rf ~/.dotfiles/.config/alacritty ~/.config
 cp -rf ~/.dotfiles/.zshrc ~/.zshrc
 cp -rf ~/.dotfiles/.p10k.zsh ~/.p10K.zsh
-cp -rf ~/.dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/custom
+cp -rf ~/.dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh
