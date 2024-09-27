@@ -11,6 +11,7 @@ return {
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
         "j-hui/fidget.nvim",
+        "jose-elias-alvarez/null-ls.nvim",
     },
 
     config = function()
@@ -21,13 +22,25 @@ return {
             {},
             vim.lsp.protocol.make_client_capabilities(),
             cmp_lsp.default_capabilities())
+        local null_ls = require("null-ls")
+        null_ls.setup({
+            sources = {
+                null_ls.builtins.diagnostics.ruff,
+                null_ls.builtins.formatting.black,
+            }
+        })
 
         require("fidget").setup({})
-        require("mason").setup()
+        require("mason").setup({
+            ensure_installed = {
+                "ruff",
+                "black",
+            },
+        })
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
-                "pylsp",
+                "pyright",
                 "jdtls",
             },
             handlers = {
@@ -51,7 +64,6 @@ return {
                     })
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
-
                 end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
@@ -67,24 +79,31 @@ return {
                         }
                     }
                 end,
-                ["pylsp"] = function()
+                ["pyright"] = function()
                     local lspconfig = require("lspconfig")
-                    lspconfig.pylsp.setup{
+                    lspconfig.pyright.setup {
                         capabilities = capabilities,
-                        settings = {
-                            pylsp = {
-                                plugins = {
-                                    pycodestyle = {
-                                        enabled = false,
-                                    },
-                                    autopep8 = {
-                                        enable = true,
-                                    }
-                                }
-                            }
-                        }
+                        filetypes = {"python"},
                     }
                 end,
+                -- ["pylsp"] = function()
+                --     local lspconfig = require("lspconfig")
+                --     lspconfig.pylsp.setup {
+                --         capabilities = capabilities,
+                --         settings = {
+                --             pylsp = {
+                --                 plugins = {
+                --                     pycodestyle = {
+                --                         enabled = false,
+                --                     },
+                --                     autopep8 = {
+                --                         enable = true,
+                --                     }
+                --                 }
+                --             }
+                --         }
+                --     }
+                -- end,
             }
         })
 
