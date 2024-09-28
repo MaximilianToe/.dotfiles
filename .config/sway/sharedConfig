@@ -1,5 +1,5 @@
 
-font pango:MesloLGS Nerd Font Mono Bold 14
+font pango:JetBrainsMono Nerd Font Mono 14
 
 set $mod Mod4
 focus_follows_mouse no
