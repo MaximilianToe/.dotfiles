@@ -1,0 +1,98 @@
+
+font pango:MesloLGS Nerd Font Mono Bold 14
+
+set $mod Mod4
+focus_follows_mouse no
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec alacritty
+# kill focused window
+bindsym $mod+shift+c kill
+
+# start dmenu (a program launcher)
+bindsym $mod+space exec --no-startup-id ~/.config/rofi/launcher/run.sh
+bindsym $mod+shift+Escape exec --no-startup-id ~/.config/rofi/powermenu/run.sh
+bindsym $mod+Tab exec --no-startup-id ~/.config/rofi/switcher/run.sh
+bindsym $mod+b exec thunar
+bindsym $mod+v exec alacritty --class clipse -e clipse
+for_window [class="clipse"] floating enable
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+bindsym $mod+i exec firefox --new-window https://chat.openai.com
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+bindsym $mod+d layout toggle split
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10 "
+
+# switch to workspace
+bindsym $mod+dollar workspace number $ws1
+bindsym $mod+bracketleft workspace number $ws2
+bindsym $mod+braceleft workspace number $ws3
+bindsym $mod+parenleft workspace number $ws4
+bindsym $mod+asterisk workspace number $ws5
+bindsym $mod+equal workspace number $ws6
+bindsym $mod+parenright workspace number $ws7
+bindsym $mod+braceright workspace number $ws8
+bindsym $mod+bracketright workspace number $ws9
+bindsym $mod+percent workspace number $ws10
+
+bindsym $mod+q workspace number $ws1
+bindsym $mod+w workspace number $ws2
+bindsym $mod+e workspace number $ws3
+bindsym $mod+r workspace number $ws4
+bindsym $mod+t workspace number $ws5
+bindsym $mod+y workspace number $ws6
+bindsym $mod+u workspace number $ws7
+
+# move focused container to workspace
+bindsym $mod+Shift+dollar move container to workspace number $ws1
+bindsym $mod+Shift+bracketleft move container to workspace number $ws2
+bindsym $mod+Shift+braceleft move container to workspace number $ws3
+bindsym $mod+Shift+parenleft move container to workspace number $ws4
+bindsym $mod+Shift+asterisk move container to workspace number $ws5
+bindsym $mod+Shift+equal move container to workspace number $ws6
+bindsym $mod+Shift+parenright move container to workspace number $ws7
+bindsym $mod+Shift+braceright move container to workspace number $ws8
+bindsym $mod+Shift+bracketright move container to workspace number $ws9
+bindsym $mod+Shift+percent  move container to workspace number $ws10
+
+bindsym $mod+shift+q move container to workspace number $ws1
+bindsym $mod+shift+w move container to workspace number $ws2
+bindsym $mod+shift+e move container to workspace number $ws3
+bindsym $mod+shift+r move container to workspace number $ws4
+bindsym $mod+shift+t move container to workspace number $ws5
+bindsym $mod+shift+y move container to workspace number $ws6
+bindsym $mod+shift+u move container to workspace number $ws7
+
+# reload the configuration file
+#bindsym $mod+Shift+z reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+z restart
