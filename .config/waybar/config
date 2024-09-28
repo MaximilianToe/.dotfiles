@@ -30,14 +30,14 @@
       "4": [],
       "5": [],
     },
-    "format": "{icon}",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": ""
-      },
+//    "format": "{icon}",
+//    "format-icons": {
+//      "1": "",
+//      "2": "",
+//      "3": "",
+//      "4": "",
+//      "5": ""
+//      },
     },
 
   "sway/window": {
@@ -164,14 +164,14 @@
     },
 
   "image/logo": {
-    "path": "/home/mura/.config/sway/swaywm.png",
+    "path": "/home/max/.config/sway/swaywm.png",
     "size": 18,
     "interval": 5,
     "on-click": "rofi -show drun",
     },
 
   "custom/spotify": {
-    "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/spotsway.py --player spotify",
+    "exec": "/usr/bin/python3 /home/max/.config/waybar/scripts/spotsway.py --player spotify",
     "format": " {}",
     "return-type": "json",
     "on-click": "playerctl play-pause",
@@ -183,13 +183,13 @@
     "format": "{}",
     "tooltip": true,
     "interval": 3600,
-    "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/wttr.py",
+    "exec": "/usr/bin/python3 /max/max/.config/waybar/scripts/wttr.py",
     "return-type": "json"
     },
 
   "custom/power": {
     "format": "",
-    "on-click": "/home/mura/.config/sway/scripts/wlogout",
+    "on-click": "/home/max/.config/sway/scripts/wlogout",
     },
 
   "custom/space": {
