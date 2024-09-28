@@ -64,7 +64,7 @@ bindsym $mod+shift+c kill
 bindsym $mod+space exec --no-startup-id ~/.config/rofi/launcher/run.sh
 bindsym $mod+shift+Escape exec --no-startup-id ~/.config/rofi/powermenu/run.sh
 bindsym $mod+Tab exec --no-startup-id ~/.config/rofi/switcher/run.sh
-bindsym $mod+b exec dolphin
+bindsym $mod+b exec thunar
 bindsym $mod+v exec alacritty --class clipse -e clipse
 for_window [class="clipse"] floating enable
 # A more modern dmenu replacement is rofi:
