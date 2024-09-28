@@ -13,11 +13,11 @@ gaps bottom 1
 gaps top 1
 
 # SwayFx options
-corner_radius 12
-smart_corner_radius on
-shadows on
-shadow_blur_radius 12
-shadow_color #303446
+# corner_radius 12
+# smart_corner_radius on
+# shadows on
+# shadow_blur_radius 12
+# shadow_color #303446
 
 # Sway Theming
 # Catppuccin Mocha
