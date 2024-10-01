@@ -1,0 +1,2 @@
+/*@import "~/.config/rofi/tmux/style.rasi"*/
+@theme "nord.rasi"

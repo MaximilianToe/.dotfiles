@@ -13,17 +13,17 @@
 configuration {
     modi:                       "drun,run";
     font:                       "Fira Sans 11";
-    show-icons:                 true;
+    show-icons:                 false;
     icon-theme:                 "kora";
     display-drun:               "APPS";
     display-run:                "RUN";
     display-filebrowser:        "FILES";
     display-window:             "WINDOW";
-	drun-display-format:        "{name}";
-    hover-select:               false;
+	hover-select:               false;
     scroll-method:              1;
     me-select-entry:            "";
     me-accept-entry:            "MousePrimary";
+    drun-display-format:        "{name}";
     window-format:              "{w} · {c} · {t}";
 
 }
@@ -42,9 +42,9 @@ configuration {
 
 /* ---- Window ---- */
 window {
-    width:                        900px;
+    width:                        600px;
     x-offset:                     0px;
-    y-offset:                     0px;
+    y-offset:                     65px;
     spacing:                      0px;
     padding:                      0px;
     margin:                       0px;
@@ -53,8 +53,8 @@ window {
     border-color:                 #FFFFFF;
     cursor:                       "default";
     transparency:                 "real";
-    location:                     center;
-    anchor:                       center;
+    location:                     north;
+    anchor:                       north;
     fullscreen:                   false;
     enabled:                      true;
     border-radius:                10px;
@@ -69,7 +69,7 @@ mainbox {
     margin:                       0px;
     background-color:             @background;
     background-image:             @current-image;
-    children:                     ["imagebox","listbox"];
+    children:                     ["listbox"];
 }
 
 /* ---- Imagebox ---- */
@@ -85,7 +85,7 @@ listbox {
     spacing:                     20px;
     background-color:            transparent;
     orientation:                 vertical;
-    children:                    [ "message", "listview" ];
+    children:                    [ "inputbar", "message", "listview" ];
 }
 
 /* ---- Dummy ---- */
@@ -99,7 +99,7 @@ inputbar {
     text-color:                   @foreground;
     spacing:                      10px;
     padding:                      15px;
-    border-radius:                10px;
+    border-radius:                0px;
     border-color:                 @foreground;
     background-color:             @background;
     children:                     [ "textbox-prompt-colon", "entry" ];
@@ -108,8 +108,8 @@ inputbar {
 textbox-prompt-colon {
     enabled:                      true;
     expand:                       false;
-    str:                          "";
     padding:                      0px 5px 0px 0px;
+    str:                          "";
     background-color:             transparent;
     text-color:                   inherit;
 }
