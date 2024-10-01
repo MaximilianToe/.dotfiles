@@ -28,7 +28,7 @@ exec_always $HOME/.config/scripts/thunar.sh &
 exec_always udiskie -2 &
 
 # Wallpaper
-exec ~/.azotebg
+exec ~/.wallpapers
 
 # Bling
 exec_always --no-startup-id autotiling
