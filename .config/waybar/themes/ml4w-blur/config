@@ -26,7 +26,7 @@
 
     // Modules Left
     "modules-left": [
-        "custom/appmenu",
+ //       "custom/appmenu",
         "group/links",
         "group/settings",
         //"wlr/taskbar",
@@ -42,7 +42,7 @@
 
     // Modules Right
     "modules-right": [
-        "custom/updates",
+//        "custom/updates",
         "pulseaudio",
         //"backlight",
         "bluetooth",
@@ -52,7 +52,7 @@
         "group/tools",
         "tray",
         "custom/exit",
-        "custom/ml4w-welcome",
+//        "custom/ml4w-welcome",
         "clock"
     ]
 }
