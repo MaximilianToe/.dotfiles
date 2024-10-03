@@ -61,8 +61,8 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+shift+c kill
 
 # start dmenu (a program launcher)
-bindsym $mod+space exec --no-startup-id ~/.config/rofi/launcher/run.sh
-bindsym $mod+shift+Escape exec --no-startup-id ~/.config/rofi/powermenu/run.sh
+bindsym $mod+space exec --no-startup-id rofi -show drun -replace -i
+bindsym $mod+shift+Escape exec --no-startup-id rofi -show drun -replace -i
 bindsym $mod+Tab exec --no-startup-id ~/.config/rofi/switcher/run.sh
 bindsym $mod+b exec thunar
 bindsym $mod+v exec alacritty --class clipse -e clipse
