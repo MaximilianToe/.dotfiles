@@ -78,7 +78,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python zsh-autosuggestions zsh-syntax-highlighting zsh-autocomplete copypath web-search fzf zoxide)
+plugins=(git python zsh-autosuggestions zsh-syntax-highlighting copypath web-search fzf zoxide)
 
 bindkey "^y" autosuggest-accept
 bindkey "^E" fzf-cd-widget
