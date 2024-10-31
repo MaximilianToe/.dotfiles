@@ -86,24 +86,6 @@ return {
                         filetypes = {"python"},
                     }
                 end,
-                -- ["pylsp"] = function()
-                --     local lspconfig = require("lspconfig")
-                --     lspconfig.pylsp.setup {
-                --         capabilities = capabilities,
-                --         settings = {
-                --             pylsp = {
-                --                 plugins = {
-                --                     pycodestyle = {
-                --                         enabled = false,
-                --                     },
-                --                     autopep8 = {
-                --                         enable = true,
-                --                     }
-                --                 }
-                --             }
-                --         }
-                --     }
-                -- end,
             }
         })
 
