@@ -46,12 +46,9 @@ return {
             },
             handlers = {
                 function(server_name) -- default handler (optional)
-                -- don't call setup for jdtls since this in handeled seperately
-                if server_name ~= 'jdtls' then
                     require("lspconfig")[server_name].setup {
                         capabilities = capabilities
                     }
-                end
                 end,
 
                 zls = function()

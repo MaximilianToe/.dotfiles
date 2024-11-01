@@ -50,5 +50,5 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 --LSP keymaps
-vim.keymap.set('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
-vim.keymap.set('n', '<leader>cl', '<cmd>lua vim.diagnostic.open_float()<CR>')
+vim.keymap.set('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>')
+vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.open_float()<CR>')
