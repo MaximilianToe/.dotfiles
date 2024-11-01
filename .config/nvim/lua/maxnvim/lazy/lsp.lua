@@ -3,6 +3,7 @@ return {
     dependencies = {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
+        "WhoIsSethDaniel/mason-tool-installer.nvim",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
@@ -45,9 +46,12 @@ return {
             },
             handlers = {
                 function(server_name) -- default handler (optional)
+                -- don't call setup for jdtls since this in handeled seperately
+                if server_name ~= 'jdtls' then
                     require("lspconfig")[server_name].setup {
                         capabilities = capabilities
                     }
+                end
                 end,
 
                 zls = function()
@@ -87,6 +91,13 @@ return {
                     }
                 end,
             }
+        })
+
+        require("mason-tool-installer").setup({
+            ensure_installed = {
+                'java-debug-adapter',
+                'java-test'
+            },
         })
 
         local cmp_select = { behavior = cmp.SelectBehavior.Select }
