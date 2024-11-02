@@ -38,17 +38,32 @@ return {
                 "black",
             },
         })
+        require('mason-tool-installer').setup({
+            -- Install these linters, formatters, debuggers automatically
+            ensure_installed = {
+                'java-debug-adapter',
+                'java-test',
+            },
+        })
+        -- There is an issue with mason-tools-installer running with VeryLazy, since it triggers on VimEnter which has already occurred prior to this plugin loading so we need to call install explicitly
+        -- https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim/issues/39
+        -- vim.api.nvim_command('MasonToolsInstall')
         require("mason-lspconfig").setup({
             ensure_installed = {
+                "bashls",
+                "html",
+                "cssls",
                 "lua_ls",
                 "pyright",
                 "jdtls",
             },
             handlers = {
                 function(server_name) -- default handler (optional)
-                    require("lspconfig")[server_name].setup {
-                        capabilities = capabilities
-                    }
+                    if server_name ~= 'jdtls' then
+                        require("lspconfig")[server_name].setup {
+                            capabilities = capabilities
+                        }
+                    end
                 end,
 
                 zls = function()
@@ -84,7 +99,7 @@ return {
                     local lspconfig = require("lspconfig")
                     lspconfig.pyright.setup {
                         capabilities = capabilities,
-                        filetypes = {"python"},
+                        filetypes = { "python" },
                     }
                 end,
             }
