@@ -50,6 +50,7 @@ return {
         -- vim.api.nvim_command('MasonToolsInstall')
         require("mason-lspconfig").setup({
             ensure_installed = {
+                "gopls",
                 "bashls",
                 "html",
                 "cssls",
