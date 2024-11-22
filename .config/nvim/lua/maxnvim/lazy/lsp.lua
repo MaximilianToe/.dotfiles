@@ -82,6 +82,27 @@ return {
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
                 end,
+                -- ["jdtls"] = function()
+                --     local lspconfig = require("lspconfig")
+                --     lspconfig.jdtls.setup {
+                --         settings = {
+                --             java = {
+                --                 format = {
+                --                     enabled = true,
+                --                     settings = {
+                --                         -- Direct path to the XML file
+                --                         url = vim.fn.expand('~/.config/nvim/ftplugin/mzmine-intellij-code-formater.xml'),
+                --                         -- Or absolute path:
+                --                         -- url = "/absolute/path/to/your/format.xml",
+
+                --                         -- The profile name from your XML file
+                --                         profile = "mzmine-GoogleStyle"
+                --                     }
+                --                 }
+                --             }
+                --         }
+                --     }
+                -- end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.lua_ls.setup {

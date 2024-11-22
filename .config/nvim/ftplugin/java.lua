@@ -100,7 +100,7 @@ local config = {
 				enabled = true,
 				-- Formatting works by default, but you can refer to a specific file/URL if you choose
 				settings = {
-                    path = home .. "/.config/nvim/ftplugin/mzmine-intellij-code-formater.xml",
+                    url = home .. "/.dotfiles/.config/nvim/ftplugin/mzmine-intellij-code-formater.xml",
                     profile = "mzmine-GoogleStyle",
 				  -- url = "https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml",
 				  -- profile = "GoogleStyle",
