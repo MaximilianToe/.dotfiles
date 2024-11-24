@@ -1,2 +1,2 @@
-.config/ml4w/cache/*
+*.config/ml4w/cache/*
 lazy-lock.json

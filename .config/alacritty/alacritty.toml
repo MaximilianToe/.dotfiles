@@ -37,8 +37,7 @@ save_to_clipboard = true
 
 [general]
 import = [
-    #"~/.config/alacritty/themes/nightfly.toml"
+    # "~/.config/alacritty/themes/nightfly.toml"
     "~/.config/alacritty/themes/tokyo-night-storm.toml"
 ]
-
 
