@@ -50,10 +50,10 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 --LSP keymaps
-vim.keymap.set('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>')
-vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.open_float()<CR>')
-vim.keymap.set('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>')
-vim.keymap.set('n', '<Leader>le', vim.diagnostic.open_float, { noremap = true, silent = true })
+-- vim.keymap.set('n', '<leader>la', '<cmd>lua vim.lsp.buf.code_action()<CR>')
+-- vim.keymap.set('n', '<leader>ld', '<cmd>lua vim.diagnostic.open_float()<CR>')
+-- vim.keymap.set('n', '<leader>lr', '<cmd>lua vim.lsp.buf.rename()<CR>')
+-- vim.keymap.set('n', '<Leader>le', vim.diagnostic.open_float, { noremap = true, silent = true })
 
 --Debugging
 vim.keymap.set("n", "<leader>bb", "<cmd>lua require'dap'.toggle_breakpoint()<cr>")
