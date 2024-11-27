@@ -100,7 +100,8 @@ local config = {
 				enabled = true,
 				-- Formatting works by default, but you can refer to a specific file/URL if you choose
 				settings = {
-                    url = home .. "/.dotfiles/.config/nvim/ftplugin/mzmine-intellij-code-formater.xml",
+                    url = home .. "/.dotfiles/.config/nvim/ftplugin/mzmine-eclipse-code-formater.xml",
+                    -- url = "https://github.com/mzmine/mzmine/blob/master/mzmine-intellij-code-formater.xml",
                     profile = "mzmine-GoogleStyle",
 				  -- url = "https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml",
 				  -- profile = "GoogleStyle",
@@ -150,10 +151,10 @@ local config = {
 }
 
 -- Needed for debugging
--- config["on_attach"] = function(client, bufnr)
--- 	jdtls.setup_dap({ hotcodereplace = "auto" })
--- 	require("jdtls.dap").setup_dap_main_class_configs()
--- end
+config["on_attach"] = function(client, bufnr)
+	jdtls.setup_dap({ hotcodereplace = "auto" })
+	require("jdtls.dap").setup_dap_main_class_configs()
+end
 
 -- This starts a new client & server, or attaches to an existing client & server based on the `root_dir`.
 jdtls.start_or_attach(config)
