@@ -1,0 +1,249 @@
+
+KBD {layout_name} "Generated Layout"
+VERSION 1.0
+COPYRIGHT "Converted from Linux keymap"
+COMPANY "Custom"
+LOCALENAME "en-US"
+LOCALEID "00000409"
+SHIFTSTATE
+0	//Column 4
+1	//Column 5 : Shft
+LAYOUT
+`	grave	asciitilde
+1	dollar	1
+2	bracketleft	2
+3	braceleft	3
+4	parenleft	4
+5	asterisk	5
+6	equal	6
+7	parenright	7
+8	braceright	8
+9	bracketright	9
+0	percent	0
+-	exclam	ampersand
+=	at	asciicircum
+`	less	greater
+`	dead_grave	dead_tilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	dead_circumflex
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	bracketleft	braceleft
+=	bracketright	braceright
+`	dead_grave	dead_tilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	dead_circumflex
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	bracketleft	braceleft
+=	bracketright	braceright
+4	4	dollar
+1	bracketleft	braceleft
+2	bracketright	braceright
+3	slash	question
+4	p	P
+5	f	F
+6	m	M
+7	l	L
+8	j	J
+9	4	dollar
+0	3	numbersign
+-	2	at
+=	1	exclam
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	j	J
+6	l	L
+7	m	M
+8	f	F
+9	p	P
+0	slash	question
+-	bracketleft	braceleft
+=	bracketright	braceright
+`	grave	asciitilde
+1	bracketleft	braceleft
+2	7	ampersand
+3	5	percent
+4	3	numbersign
+5	1	exclam
+6	9	parenleft
+7	0	parenright
+8	2	at
+9	4	dollar
+0	6	asciicircum
+-	8	asterisk
+=	bracketright	braceright
+`	dollar	asciitilde
+1	ampersand	percent
+2	Group1	
+3	Group1	
+4	Group1	
+5	Group1	
+6	Group1	
+7	Group1	
+8	Group1	
+9	Group1	
+0	Group1	
+-	Group1	
+=	numbersign	grave
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	bracketleft	braceleft
+=	bracketright	braceright
+`	Cyrillic_io	Cyrillic_IO
+=	Cyrillic_hardsign	Cyrillic_HARDSIGN
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+7	equal	plus
+8	7	ampersand
+9	8	asterisk
+0	9	parenleft
+-	0	parenright
+=	minus	underscore
+`	grave	U13CA
+1	1	U13B1
+2	2	U13C7
+3	3	U13E7
+4	U13D9	U13B0
+5	U13E6	U13B9
+6	U13DC	U13DD
+7	U13CB	U13E1
+8	U13D6	U13BA
+9	U13D2	parenleft
+0	U13C4	parenright
+-	U13BF	U13BC
+=	U13F3	U13BD
+1	exclam	1
+2	at	2
+3	numbersign	3
+4	dollar	4
+5	percent	5
+6	asciicircum	6
+7	ampersand	7
+8	asterisk	8
+9	parenleft	9
+0	parenright	0
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+`	dead_grave	dead_tilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	dead_circumflex
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+`	grave	asciitilde
+1	1	exclam
+2	2	at
+3	3	numbersign
+4	4	dollar
+5	5	percent
+6	6	asciicircum
+7	7	ampersand
+8	8	asterisk
+9	9	parenleft
+0	0	parenright
+-	minus	underscore
+=	equal	plus
+1	1	
+2	2	
+3	3	
+4	4	
+5	5	
+6	6	
+7	7	
+8	8	
+9	9	
+0	0	
+ENDLAYOUT
+DEADKEY
