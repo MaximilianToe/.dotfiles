@@ -80,10 +80,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git python zsh-autosuggestions zsh-syntax-highlighting copypath web-search fzf zoxide)
 
-bindkey "^y" autosuggest-accept
-bindkey "^E" fzf-cd-widget
-
 source $ZSH/oh-my-zsh.sh
+
+bindkey "^Y" autosuggest-accept
+bindkey "^E" fzf-cd-widget
 
 # User configuration
 
@@ -132,3 +132,4 @@ export PATH="$PATH:/home/max/.turso"
 
 # default editor
 export EDITOR="nvim"
+
