@@ -73,13 +73,13 @@ local config = {
 				-- TODO Update this by adding any runtimes that you need to support your Java projects and removing any that you don't have installed
 				-- The runtime name parameters need to match specific Java execution environments.  See https://github.com/tamago324/nlsp-settings.nvim/blob/2a52e793d4f293c0e1d61ee5794e3ff62bfbbb5d/schemas/_generated/jdtls.json#L317-L334
 				runtimes = {
+                    {
+                        name = "JavaSE-11",
+                        path = "/usr/lib/jvm/java-11-openjdk-11"
+                    },
 					{
-						name = "JavaSE-11",
-						path = "/usr/lib/jvm/java-23-openjdk",
-					},
-					{
-						name = "JavaSE-17",
-						path = "/usr/lib/jvm/java-21-openjdk",
+						name = "JavaSE-21",
+						path = "/usr/lib/jvm/java-21-openjdk-amd64",
 					},
 				},
 			},
